@@ -1,7 +1,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import "./App.css";
-import scholarships from "./Data/scholarships.js";
+import scholarships from "./scholarships.js";
 import { auth, db } from "./firebase";
 import {
   createUserWithEmailAndPassword,

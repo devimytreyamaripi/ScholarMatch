@@ -1,0 +1,97 @@
+/* Append these styles to the END of your existing src/App.css file. */
+
+.scholarship-search {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(180px, 1fr);
+  gap: 12px;
+  margin: 24px 0 12px;
+}
+
+.scholarship-search input,
+.scholarship-search select {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #dedcf4;
+  border-radius: 10px;
+  background: #fff;
+  color: #25233b;
+  font: inherit;
+  outline: none;
+}
+
+.scholarship-search input:focus,
+.scholarship-search select:focus {
+  border-color: #6254ed;
+  box-shadow: 0 0 0 3px rgba(98, 84, 237, 0.12);
+}
+
+.scholarship-count {
+  margin: 12px 0 20px;
+  color: #77748c;
+  font-size: 13px;
+}
+
+.scholarship-grid {
+  align-items: stretch;
+}
+
+.scholarship-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.scholarship-category {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 20px;
+  background: #f0edff;
+  color: #5b4cdb;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.scholarship-details {
+  width: 100%;
+  margin-top: 6px;
+}
+
+.scholarship-details p {
+  margin: 8px 0;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.scholarship-link {
+  display: inline-block;
+  margin-top: auto;
+  text-decoration: none;
+  text-align: center;
+}
+
+.scholarship-empty {
+  margin: 24px 0;
+  padding: 28px;
+  border: 1px dashed #d7d3ee;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.resource-notice {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f0efff;
+  color: #514b78;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .scholarship-search {
+    grid-template-columns: 1fr;
+  }
+}
